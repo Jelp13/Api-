@@ -4,7 +4,7 @@ function mostrarLsita(listaPokes){
     let Pokes = "";
 
 
-for (let i = 0; i < pokemones.length; i++) {
+for (let i = 0; i < listaPokes.length; i++) {
     let id = listaPokes[i].url.split("/")[6];
     Pokes += `
     <div class="c-lista-pokemon poke-${id}" onclick="mostrarDetalle('${listaPokes[i].name}')">
