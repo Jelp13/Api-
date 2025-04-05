@@ -6,7 +6,7 @@ function mostrarLista(listaPokes){
     const seccion = document.createElement("section");
     seccion.classList.add("c-lista"); 
 
-    for (let pokemon of listaPokes){
+    for (let i = 0; i < listaPokes.length; i++) {
         let id = listaPokes[i].url.split("/")[6];
         Pokes += `
         <div class="c-lista-pokemon poke-${id}" onclick="mostrarDetalle('${listaPokes[i].name}')">
